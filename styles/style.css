@@ -1,6 +1,9 @@
 @import url(./normalize.css);
 @import url(./reset.css);
-
+/* 기본 스타일 */
+*, *::before, *::after{
+  box-sizing: border-box;
+}
 /* 본문 스타일 */
 body{
   background-color: #ffc;
@@ -9,29 +12,61 @@ body{
 /* 레이아웃 */
 .header, .visual, .main, .slogan, .footer-inner{
   width: 940px;
-  box-sizing: border-box;
   margin:0 auto;
 }
 /* 헤더 */
 .header{
   background-color: pink;
   padding: 0 30px;
+  height: 15vh;
 }
 /* 비주얼 */
 .visual{
   background-color: orange;
+  height: 10vh;
 }
 /* 메인 */
 .main{
   background-color: lightgreen;
+  display: flow-root;
+  height: 50vh;
+  padding: 0 15px;
+  /* float: left; */
+  /* overflow: hidden; */
+  /* BFC */
 }
+/* .main::after{
+  content:"";
+  clear: both;
+  display: block;
+} */
+.group{
+  margin:0 15px;
+  float: left;
+}
+.group1{
+  background-color: tomato;
+  width: 250px;
+}
+.group2{
+  background-color: violet;
+  width: 380px;
+}
+.group3{
+  background-color: gold;
+  width: 190px;
+}
+
 /* 슬로건 */
 .slogan{
   background-color: skyblue;
+  height: 10vh;
+  /* clear: both; */
 }
 /* 푸터 */
 .footer{
   background-color: gray;
+  height: 15vh;
 }
 .footer-inner{
   background-color: silver;
