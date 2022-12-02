@@ -59,8 +59,8 @@ body{
 /* 푸터 */
 .footer{
   background-color: gray;
-  height: 15vh;
 }
 .footer-inner{
   background-color: silver;
+  height: 15vh;
 }
