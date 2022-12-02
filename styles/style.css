@@ -28,9 +28,9 @@ body{
 /* 메인 */
 .main{
   background-color: lightgreen;
-  display: flow-root;
   height: 50vh;
-  padding: 0 15px;
+  display: flex;
+  flex-direction: row;
   /* float: left; */
   /* overflow: hidden; */
   /* BFC */
@@ -40,10 +40,6 @@ body{
   clear: both;
   display: block;
 } */
-.group{
-  margin:0 15px;
-  float: left;
-}
 .group1{
   background-color: tomato;
   width: 250px;
