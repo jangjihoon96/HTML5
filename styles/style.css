@@ -28,25 +28,22 @@ body{
 /* 메인 */
 .main{
   background-color: lightgreen;
-  height: 50vh;
+  min-height: 450px;
   display: flex;
-  flex-direction: row;
-  /* float: left; */
-  /* overflow: hidden; */
-  /* BFC */
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
+  /* flex-direction: row; */
+  /* flex-wrap: nowrap; */
 }
-/* .main::after{
-  content:"";
-  clear: both;
-  display: block;
-} */
 .group1{
   background-color: tomato;
   width: 250px;
 }
 .group2{
   background-color: violet;
-  width: 380px;
+  width: 380px; 
 }
 .group3{
   background-color: gold;
