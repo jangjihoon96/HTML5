@@ -16,10 +16,49 @@ body{
 }
 /* 헤더 */
 .header{
-  background-color: pink;
+  background-color: #ffffff;
   padding: 0 30px;
   height: 15vh;
+  border-radius: 0 0 15px 15px;
 }
+
+.member{
+  background-color: pink;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+
+/* :before / ::before => first child */
+/* :after / ::after => last child */
+
+/* 구조셀렉터 */
+/* 네거티브 방식?? -n + 1 */
+/* odd, even = 홀수, 짝수 */
+/* .member li:nth-child(n+2):nth-child(-n+4){
+  background-color: yellow;
+} */
+
+.member li:nth-child(n+2)::before{
+  content: ":";
+}
+
+/* .member li::before{
+  content: ":";
+} */
+/* li.first::before{
+  content:"";
+} */
+/* .first::before{
+  content:"" !important;
+} */
+/* .member .first::before{
+  content: "";
+} */
+/* .member li:first-child::before{
+  content: "";
+} */
+
 /* 비주얼 */
 .visual{
   background-color: orange;
