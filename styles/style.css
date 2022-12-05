@@ -1,5 +1,6 @@
 @import url(./normalize.css);
 @import url(./reset.css);
+@import url(./fontello.css);
 /* 기본 스타일 */
 *, *::before, *::after{
   box-sizing: border-box;
@@ -29,6 +30,20 @@ body{
   justify-content: flex-end;
 }
 
+/* .member li::before{
+  content:"\e801";
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+} */
+
 /* :before / ::before => first child */
 /* :after / ::after => last child */
 
@@ -38,11 +53,9 @@ body{
 /* .member li:nth-child(n+2):nth-child(-n+4){
   background-color: yellow;
 } */
-
-.member li:nth-child(n+2)::before{
+/* .member li:nth-child(n+2)::before{
   content: ":";
-}
-
+} */
 /* .member li::before{
   content: ":";
 } */
