@@ -191,10 +191,45 @@ body{
 
 
 /* 비주얼 */
-.visual{
-  background-color: orange;
-  height: 10vh;
+
+@keyframes moveEffect{
+  0% {
+    font-size: 12px;
+    /* top: 0;
+    left: 0; */
+    transform: translate(0, 0);
+    color: rgba(0,0,0,0.2);
+  }
+  100% {
+    font-size: 24px;
+    transform: translate(400px, 75px);
+    /* top: 75px;
+    left: 400px; */
+    /* padding: 75px 0 0 400px; */
+    color: rgba(0,0,0,1);
+  }
 }
+
+.visual{
+  position: relative;
+  background-color: transparent;
+  background-image: url(./images/bg_flower.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 120px;
+  /* overflow: hidden; */
+}
+.visual-text{
+  /* position: absolute; */
+  display: inline-block;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  animation-name: moveEffect;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
+}
+  
+
 /* 메인 */
 .main{
   background-color: lightgreen;
