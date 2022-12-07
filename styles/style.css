@@ -95,7 +95,7 @@ body{
 
 /* 메인 메뉴 */
 .navigation{
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 .menu{
   position: relative;
@@ -138,9 +138,9 @@ body{
   border-top: 2px solid #212121;
 }
 .sub-menu{
-  background-color: pink;
   position: absolute;
   top: 47px;
+  padding: 4px 0;
   display: none;
 }
 .menu-html, 
@@ -179,6 +179,14 @@ body{
 .sub-menu a:hover::before,
 .sub-menu a:focus::before{
   content: '\e800';
+}
+.sub-menu a{
+  display: inline-block;
+  padding: 6px 0;
+}
+.sub-menu a:hover,
+.sub-menu a:focus{
+  color: #f00;
 }
 
 
