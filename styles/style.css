@@ -198,7 +198,8 @@ body{
     /* top: 0;
     left: 0; */
     transform: translate(0, 0);
-    color: rgba(0,0,0,0.2);
+    color: hsla(0, 0%, 0%, 0);
+    /* color: rgba(0,0,0,0); */
   }
   100% {
     font-size: 24px;
@@ -206,7 +207,8 @@ body{
     /* top: 75px;
     left: 400px; */
     /* padding: 75px 0 0 400px; */
-    color: rgba(0,0,0,1);
+    color: hsla(0, 0%, 0%, 1);
+    /* color: rgba(0,0,0,1); */
   }
 }
 
@@ -227,6 +229,7 @@ body{
   animation-name: moveEffect;
   animation-duration: 2000ms;
   animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
 }
   
 
