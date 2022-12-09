@@ -385,7 +385,6 @@ body{
 .sign li a{
   font-size: 12px;
   letter-spacing: -0.01em;
-  color: #9a9a9a;
   display: inline-block;
   padding: 4px 0;
 }
@@ -401,13 +400,40 @@ body{
   font-variant: normal;
   text-transform: none;
   line-height: 1em;
-  margin-left: .2em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .sign li a:hover{
   color: orange;
 }
+
+/* 유효성검사 */
+.validation-list{
+  margin-top:25px;
+}
+.validation-list li{
+  margin-top:10px;
+}
+.validation-list a{
+  display: block;
+  /* height: 40px;
+  line-height: 38px; */
+  padding: 8px 15px;
+  padding-left:52px;
+  border: 1px solid #aaa;
+  border-radius: 20px;
+  background: url(./images/validation_icon.png) no-repeat left 25px center, #ccc linear-gradient(to bottom, #ccc 0%, #eee 100%) no-repeat 0 0;
+}
+.validation-list a:hover,
+.validation-list a:focus{
+  background: url(./images/validation_icon.png) no-repeat left 25px center, #ccc linear-gradient(to bottom, #333 0%, #777 100%) no-repeat 0 0;
+  color:#fff;
+}
+
+/* .validation-list a::before{
+  content: url(./images/validation_icon.png);
+  vertical-align: middle;
+} */
 
 
 /* 슬로건 */
