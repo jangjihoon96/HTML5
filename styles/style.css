@@ -2,7 +2,6 @@
 @import url(./reset.css);
 @import url(./fonts.css);
 
-/* 기본 스타일 */
 *, *::before, *::after{
   box-sizing: border-box;
   margin:0;
@@ -18,34 +17,46 @@ body{
   font-size: 1.4rem;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-
-.contents{
-  width:100%;
-  max-width: 1240px;
+.header,
+.visual,
+.main,
+.slogan,
+.footer-inner {
+  width: 940px;
   margin: 0 auto;
+}
 
+/* 헤더 */
+.header {
+  background: #fff;
+  position: relative;
+  padding: 0 30px;
+  border-radius: 0 0 15px 15px;
 }
-h2{
-  text-align: center;
+
+/* 로고 */
+.logo {
+  position: absolute;
+  top: 45px;
+  left: 65px;
+  z-index: 10;
 }
-ul.best{
-  display: flex;
-  flex-flow: wrap row;
-  justify-content: center;
+.member {
+  text-align: right;
+  padding: 4px 0;
+  transform: translateX(8px);
 }
-ul.best li{
-  width: 33.33%;
-  border:1px solid #fff;
-  text-align: center;
-  margin-bottom: 20px;
-}
-ul.best li a{
+
+.member li,
+.member a {
   display: inline-block;
-  width:95%;
-
 }
-ul.best li a img{
-  max-width: 100%;
-  height: auto;
+.member a {
+  padding: 6px 8px;
+  text-transform: uppercase;
 }
