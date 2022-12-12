@@ -1,6 +1,7 @@
 @import url(./normalize.css);
 @import url(./reset.css);
 @import url(./fonts.css);
+@import url(./fontello.css);
 
 *, *::before, *::after{
   box-sizing: border-box;
@@ -15,11 +16,21 @@ html{
 body{
   margin: 0;
   font-size: 1.4rem;
+  background:url(./images/bg_flower.png) no-repeat 50% 0px, #ccc linear-gradient(to bottom, #ccc 0%, #eee 100%) no-repeat 0 0;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.a11y-hidden, legend{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
 }
 
 .header,
@@ -35,7 +46,7 @@ a {
 .header {
   background: #fff;
   position: relative;
-  padding: 0 30px;
+  padding: 0 30px 40px 30px;
   border-radius: 0 0 15px 15px;
 }
 
@@ -49,7 +60,7 @@ a {
 .member {
   text-align: right;
   padding: 4px 0;
-  transform: translateX(8px);
+  margin-right:-8px;
 }
 
 .member li,
@@ -59,4 +70,265 @@ a {
 .member a {
   padding: 6px 8px;
   text-transform: uppercase;
+}
+
+.nav{
+  background: tomato linear-gradient(to bottom, coral 0%, tomato 50%, coral 100%);
+  border-top: 2px solid #222;
+  border-radius: 0 0 5px 5px;
+}
+.menu{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+.menu-list{
+  position: relative;
+  border-left:2px solid #fff;
+}
+.menu-button{
+  padding:0 21px;
+  height: 45px;
+  line-height: 45px;
+  border: 0;
+  background-color: transparent;
+  font-weight: 700;
+  font-size:1.6rem;
+  color:#fff;
+  text-shadow: 1px 1px 0 #000;
+}
+.sub-menu{
+  display: none;
+  position: absolute;
+  top:52px;
+  white-space: nowrap;
+}
+.menu-html,
+.menu-css,
+.menu-standards{
+  left:0;
+}
+.menu-a11y,
+.menu-qna,
+.menu-archive{
+  right:0;
+}
+.is-active .menu-button{
+  color: #ff0;
+}
+.is-active .menu-button::after{
+  content: "";
+  display: block;
+  border-bottom:2px solid #333;
+}
+.is-active .sub-menu{
+  display: block;
+}
+.sub-menu li{
+  display: inline-block;
+}
+.sub-menu a{
+  display: inline-block;
+  padding:3px 4px;
+}
+.sub-menu a::before{
+  content: '\f192';
+  font-family: 'fontello';
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes textAnimation{
+  0%{
+    transform: translate(0, 0);
+    color:rgba(0,0,0,0.1);
+    font-size: 1rem;
+  }
+  100%{
+    transform: translate(420px, 80px);
+    color:rgba(0,0,0,1);
+    font-size:2.2rem;
+  }
+}
+@keyframes flowerAnimation{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.visual{
+  height: 120px;
+  background: transparent;
+  position: relative;
+}
+.visual::before{
+  content:"";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  background: url(./images/ani_flower_01.png) no-repeat 0 -10px, url(./images/ani_flower_02.png) no-repeat 600px 0;
+  animation-name: flowerAnimation;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+.visual::after{
+  content:"";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  background: url(./images/ani_flower_03.png) no-repeat 300px 0, url(./images/ani_flower_04.png) no-repeat 800px 0;
+  animation-name: flowerAnimation;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1500ms;
+}
+.visual-text{
+  position: absolute;
+  animation-name: textAnimation;
+  animation-duration: 1500ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+.main{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding:30px;
+  background-color: #fff;
+}
+.group1{
+  width: 250px;
+}
+.group2{
+  width: 380px;
+  height: 100px;
+  background-color: green;
+}
+.group3{
+  width: 190px;
+  height: 100px;
+  background-color: gray;
+}
+
+.login{
+  background: orange radial-gradient(at right top, tomato, coral);
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 #aaa;
+  padding:10px;
+}
+.login-title{
+  font-size:1.5rem;
+  font-weight: 700;
+  color:#ff0;
+  text-indent: 8px;
+}
+.login-form{
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+  margin-top: 8px;
+  padding:10px 10px 0 10px;
+}
+.login-form fieldset{
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 6px;
+  position: relative;
+}
+.login-form div{
+  margin-bottom:4px;
+}
+.login-form label{
+  display: inline-block;
+  width:54px;
+}
+.login-form input{
+  width:100px;
+  height: 24px;
+  border-radius: 3px;
+  border:1px solid #ccc;
+  padding:0 2px 0 5px;
+}
+.login-btn{
+  position: absolute;
+  top:0;
+  right:0;
+  width:46px;
+  height: 52px;
+  border:0;
+  border-radius: 3px;
+  background-color: orangered;
+  color:#fff;
+  font-size: 1.2rem;
+}
+.sign-list{
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  display: flow-root;
+  padding:8px 10px 10px 10px;
+}
+.sign-list li{
+  float:left;
+}
+.sign-list li:last-child{
+  float:right;
+}
+.sign-list li a{
+  display: inline-block;
+  padding:2px 0;
+  font-size:1.2rem;
+  color:#777;
+}
+.sign-list li a::before{
+  content: '\e803';
+  font-family: 'fontello';
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.standards{
+  margin-top:25px;
+}
+.standards-list li{
+  margin-top:10px;
+}
+.standards-list a{
+  display: block;
+  border-radius: 30px;
+  height: 40px;
+  line-height: 40px;
+  background: url(./images/validation_icon.png) no-repeat center left 24px, #ccc linear-gradient(to bottom, #ccc, #eee);
+  border:1px solid #aaa;
+  padding-left: 50px;
+  font-weight: 500;
 }
