@@ -515,7 +515,6 @@ body{
   border: 1px solid #aaa;
   font-size: 1.2rem;
 }
-
 .search-button{
   /* white-space: nowrap; */
   flex-shrink: 0;
@@ -527,6 +526,73 @@ body{
   padding: 0px 10px;
   font-size: 1.2rem;
 }
+
+/* 공지사항 및 자료실 */
+.board{
+  margin-top: 20px;
+  position: relative;
+}
+.tab-panel{
+  display: none;
+}
+.is-select.tab-panel{
+  display: block;
+}
+.tab-list{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.tab-list li:last-child{
+  margin-left: -1px;
+}
+.tab{
+  border: 1px solid #aaa;
+  background-color: #ccc;
+  border-radius: 5px 5px 0 0;
+  padding:5px 10px;
+  color: #666;
+}
+.is-select.tab{
+  background-color: #fff;
+  color: #e85e2c;
+  /* border: 1px solid #e85e2c;
+  border-bottom: 0; */
+  border-color: currentColor currentColor #fff currentColor;
+}
+.tab-panel{
+  margin-top: 15px;
+}
+.board-list li{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top:5px;
+}
+.board-list a{
+  flex-grow: 1;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding:4px 0;
+}
+.board-list time{
+  flex-shrink: 0;
+  margin-left: 10px;
+  display: inline-block;
+  padding:4px 0;
+}
+.board-more{
+  position: absolute;
+  top: 0px; right:-8px;
+  font-size: 1.2rem;
+  color:#777;
+  padding: 8px;
+}
+.icon-plus::before{
+  color: hsla(110, 50%, 40%, 1);
+}
+
 
 /* 슬로건 */
 .slogan{
