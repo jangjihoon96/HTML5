@@ -435,6 +435,50 @@ body{
   vertical-align: middle;
 } */
 
+/* 웹 관련 용어 */
+.term{
+  margin-top: 20px;
+  padding: 10px 15px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background: #ccc linear-gradient(to bottom, #ccc 0%, #eee 100%);
+}
+.term-title{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.term-list{
+  margin-top: 10px;
+}
+.term-list div{
+  margin-top: 10px;
+  display: flow-root;
+}
+.term-list-subject, .term-list-brief{
+  width: 145px;
+  float: right;
+}
+.term-list-subject{
+  color:rgb(25, 99, 219);
+  font-weight: 500;
+}
+.term-list-thumbnail{
+  float:left;
+}
+.term-list-thumbnail img{
+  vertical-align: middle;
+}
+.term-list-brief{
+  font-size:14px;
+  margin-top:5px;
+  line-height: 1.5;
+}
+.cross .term-list-subject, .cross .term-list-brief{
+  float: left;
+}
+.cross .term-list-thumbnail{
+  float: right;
+}
 
 /* 슬로건 */
 .slogan{
