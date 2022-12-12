@@ -284,7 +284,7 @@ body{
   background-color: #fff;
   display: flow-root;
   min-height: 450px;
-  padding: 0 15px;
+  padding: 30px 15px;
   border-radius: 15px 15px 0 0;
   /* float: left; */
   /* overflow: hidden; */
@@ -513,6 +513,7 @@ body{
   padding: 1px 1px 1px 5px;
   border-radius: 5px;
   border: 1px solid #aaa;
+  font-size: 1.2rem;
 }
 
 .search-button{
