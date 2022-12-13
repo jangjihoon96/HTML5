@@ -2,6 +2,7 @@
 @import url(./reset.css);
 @import url(./fonts.css);
 @import url(./fontello.css);
+@import url(./module.css);
 
 /* 숨김 컨텐츠 */
 .a11y-hidden, legend{
@@ -655,6 +656,89 @@ body{
   font-size: 1.2rem;
   color: #777;
   padding: 8px;
+}
+
+/* 신규 이벤트 및 관련 사이트 */
+.event{
+  border-bottom: 1px solid #aaa;
+  position: relative;
+}
+.event-button-wrapper{
+  height: 20px;
+  overflow: hidden;
+  position: absolute;
+  top:0;
+  right: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 5px;
+}
+/* IR 기법 */
+.event-button{
+  width: 19px;
+  height: 18px;
+  border: 0;
+  padding: 0;
+  /* text-indent: -9999px; */
+  padding: 18px 0 0 0;
+  background: url(./images/back_forward.png) no-repeat;
+}
+.event-button:focus{
+  outline-offset: -2px;
+}
+.event-button-prev{
+  background-position: 0 0;
+}
+.event-button-next{
+  background-position: -36px 0;
+}
+.event-thumbnail,
+.event-brief{
+  margin: 10px 0;
+}
+.event-brief{
+  line-height: 1.5;
+}
+.event-thumbnail img{
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px 0 #aaa;
+}
+
+.related{
+  margin-top:10px;
+}
+.related-list{
+  background-color: #fff;
+  border:1px solid #aaa;
+  border-radius: 5px;
+  margin-top: 10px;
+  height: 27px;
+  padding: 0;
+  overflow: hidden;
+  transition: height 300ms 0ms ease-in-out, padding 300ms 300ms ease-in-out;
+  /* transition-property: background-color, border-radius;
+  transition-duration: 2000ms, 2000ms;
+  transition-delay: 0ms, 2000ms;
+  transition-timing-function: ease-in-out; */
+  /* transition: background-color 2000ms 0ms ease-in-out, border-radius 2000ms 2000ms ease-in-out; */
+}
+.related-list:hover,
+.related-list:focus{
+  height: 147px;
+  padding:10px 0;
+}
+.related-list li{
+  height: 25px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 0 5px;
+  /* 147px */
+}
+.related-list a{
+  flex-grow: 1;
+  padding: 0 10px;
 }
 
 /* 슬로건 */
