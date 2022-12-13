@@ -146,13 +146,13 @@
 <main class="main">
   <div class="group group1">
     <section class="login">
-      <h2 class="login-title">로그인</h2>
+      <h2 class="login-title title-size">로그인</h2>
       <form action="" method="POST" class="login-form">
         <fieldset>
           <legend>로그인폼</legend>
           <div>
             <label for="userEmail">이메일</label>
-            <input type="email" id="userId" placeholder="email@email" required />
+            <input type="email" id="userEmail" placeholder="email@email" required />
           </div>
           <div>
             <label for="userPw">비밀번호</label>
@@ -166,9 +166,9 @@
         <li><a href="/">아이디/비밀번호 찾기</a></li>
       </ul>
     </section>
-    <section class="standards">
+    <section class="validation">
       <h2 class="a11y-hidden">웹표준 검사 링크</h2>
-      <ul class="standards-list">
+      <ul class="validation-list">
         <li>
           <a href="/">W3C Markup Validation</a>
         </li>
@@ -177,8 +177,90 @@
         </li>
       </ul>
     </section>
+    <section class="term gradient-box">
+      <h2 class="term-title title-size">웹 관련 용어/</h2>
+      <dl>
+        <div class="term-content left">
+          <dt class="item-tit">웹 표준 이란?</dt>
+          <dd class="item-desc">W3C 단체에서 규정한 웹 기술 사양에 대한 규칙을 말하며 표준 규격은...</dd>
+          <dd class="item-img"><img src="./assets/web_standards.gif" alt="" /></dd>
+        </div>
+        <div class="term-content right">
+          <dt class="item-tit">웹 표준 이란?</dt>
+          <dd class="item-desc">W3C 단체에서 규정한 웹 기술 사양에 대한 규칙을 말하며 표준 규격은...</dd>
+          <dd class="item-img"><img src="./assets/web_standards.gif" alt="" /></dd>
+        </div>
+      </dl>
+    </section>
   </div>
-  <div class="group group2">group2</div>
+  <div class="group group2">
+    <form action="" method="POST" class="search-form gradient-box">
+      <fieldset>
+        <legend class="a11y-hidden">자료검색란</legend>
+        <div class="search-field">
+          <label for="searchBox" class="icon-search">자료검색</label>
+          <input type="text" id="searchBox" placeholder="검색어를 입력하세요. 예)HTML,CSS" />
+          <button type="submit">검색</button>
+        </div>
+      </fieldset>
+    </form>
+    <section class="tab-contents">
+      <ul class="tab-list" role="tablist">
+        <li role="none"><button type="button" class="notice-btn is-active" role="tab" id="noticeBtn" aria-controls="noticePanel" aria-selected="true">공지사항</button></li>
+        <li role="none"><button type="button" class="archive-btn" role="tab" id="archiveBtn" aria-selected="false">자료실</button></li>
+      </ul>
+      <div class="tab-panel is-active" role="tabpanel" aria-labelledby="noticeBtn" id="noticePanel">
+        <ul class="panel-list">
+          <li>
+            <a href="/">HTML의 모든 것을 알려주마 샘플 활용법</a>
+            <time datetime="2022-12-13T11:31:10">2022.12.13</time>
+          </li>
+          <li>
+            <a href="/">W3C 사이트 리뉴얼 및 공지사항</a>
+            <time datetime="2022-12-13T11:31:10">2022.12.13</time>
+          </li>
+          <li>
+            <a href="/">KWCAG 2.1 소식</a>
+            <time datetime="2022-12-13T11:31:10">2022.12.13</time>
+          </li>
+          <li>
+            <a href="/">서버 점검으로 인한 사이트 이용안내 입니다.</a>
+            <time datetime="2022-12-13T11:31:10">2022.12.13</time>
+          </li>
+          <li>
+            <a href="/">여러분들이 생각하는 웹 접근성에 대해 이야기를 나누어 봅시다.</a>
+            <time datetime="2022-12-13T11:31:10">2022.12.13</time>
+          </li>
+        </ul>
+        <a href="/" class="more-btn icon-plus" aria-labelledby="noticeBtn">더보기</a>
+      </div>
+      <div class="tab-panel" role="tabpanel" aria-labelledby="archiveBtn" id="archivePanel">
+        <ul class="panel-list">
+          <li>
+            <a href="/">HTML의 모든 것을 알려주마 샘플 활용법</a>
+            <time datetime="2022-12-13T11:31:10">2022.12.13</time>
+          </li>
+          <li>
+            <a href="/">W3C 사이트 리뉴얼 및 공지사항</a>
+            <time datetime="2022-12-13T11:31:10">2022.12.13</time>
+          </li>
+          <li>
+            <a href="/">KWCAG 2.1 소식</a>
+            <time datetime="2022-12-13T11:31:10">2022.12.13</time>
+          </li>
+          <li>
+            <a href="/">서버 점검으로 인한 사이트 이용안내 입니다.</a>
+            <time datetime="2022-12-13T11:31:10">2022.12.13</time>
+          </li>
+          <li>
+            <a href="/">여러분들이 생각하는 웹 접근성에 대해 이야기를 나누어 봅시다.</a>
+            <time datetime="2022-12-13T11:31:10">2022.12.13</time>
+          </li>
+        </ul>
+        <a href="/" class="more-btn icon-plus" aria-labelledby="archiveBtn">더보기</a>
+      </div>
+    </section>
+  </div>
   <div class="group group3">group3</div>
 </main>
 </body>
