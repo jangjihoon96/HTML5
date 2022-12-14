@@ -17,3 +17,12 @@
 .margin-top-default{
   margin-top: 20px;
 }
+.margin-top-thin{
+  margin-top: 5px;
+}
+.margin-top-normal{
+  margin-top: 10px;
+}
+.margin-top-large{
+  margin-top: 15px;
+}
