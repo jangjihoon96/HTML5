@@ -481,3 +481,13 @@ a {
   position: absolute;
   top:0; right:0;
 }
+
+.news{
+  background-color: skyblue;
+  position: relative;
+}
+
+.news-more{
+  position: absolute;
+  top:0; right:0;
+}
