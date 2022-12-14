@@ -96,17 +96,32 @@ body {
   margin-top: 20px;
 }
 
+.event{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #aaa;
+}
+
+.event-title{
+}
+
+#eventDetail{
+}
+
 .event-button-wrapper{
-  background-color: red;
   overflow: hidden;
-  padding: 4px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  gap: 5px;
 }
 .event-button{
   width: 19px;
   height: 18px;
   border:0;
   padding: 0;
-  text-indent: -9999px;
   background: aqua url(./images/back_forward.png) no-repeat;
 }
 
@@ -121,6 +136,10 @@ body {
 .event-thumbnail img{
   border: 1px solid #ccc;
   box-shadow: 5px 5px 0 #aaa;
+}
+
+.related{
+  margin-top: 10px;
 }
 
 /* 인기 사이트 */
