@@ -307,7 +307,6 @@ body{
   width: 380px;
 }
 .group3{
-  background-color: gold;
   width: 190px;
 }
 
@@ -740,6 +739,9 @@ body{
   flex-grow: 1;
   padding: 0 10px;
 }
+
+/* 인기 사이트 */
+
 
 /* 슬로건 */
 .slogan{
