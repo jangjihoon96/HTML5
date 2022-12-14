@@ -235,8 +235,6 @@ a {
 }
 .group3{
   width: 190px;
-  height: 100px;
-  background-color: gray;
 }
 
 .login{
@@ -483,11 +481,100 @@ a {
 }
 
 .news{
-  background-color: skyblue;
   position: relative;
+  margin-top:10px;
 }
-
+.news-title::after{
+  content: "";
+  display: block;
+  height: 1px;
+  background: #aaa linear-gradient(to right, #aaa, #f3f3f3);
+  margin:10px 0 20px 0;
+}
+.news-content{
+  position: relative;
+  padding-left: 130px;
+}
+.news-content-title{
+  font-weight: 500;
+}
+.news-content-time{
+  display: block;
+  margin-top:6px;
+}
+.news-content-desc{
+  margin-top:10px;
+  line-height: 1.5;
+}
+.news-img{
+  position: absolute;
+  top:0; left:0; 
+  text-align: center;
+}
+.news-img img{
+  box-shadow: 5px 5px 0 #aaa;
+}
+.news-img figcaption{
+  margin-top:10px;
+}
 .news-more{
   position: absolute;
   top:0; right:0;
+}
+
+.banner{
+  padding:10px;
+  border-radius: 5px;
+}
+
+.event{
+  position: relative;
+}
+.event-btns{
+  display: flow-root;
+  position: absolute;
+  top:0;
+  right:0;
+}
+.event-btns li{
+  float: left;
+  margin-left:5px;
+}
+.event-btns a{
+  display: inline-block;
+  width:19px;
+  height: 18px;
+  background: url(./images/back_forward.png) no-repeat;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+.event-btns .prev-btn{
+  background-position: 0 0;
+}
+.event-btns .next-btn{
+  background-position: 100% 0;
+}
+.event-img{
+  margin-top:10px;
+}
+.event-img img{
+  box-shadow: 5px 5px 0 #aaa;
+}
+.event-img figcaption{
+  margin-top:10px;
+  line-height: 1.5;
+}
+
+.related::before{
+  content:"";
+  display: block;
+  border-top:1px solid #aaa;
+  margin:10px 0;
+}
+
+.related-list{
+  background-color: #fff;
+  border-radius: 5px;
+  border:1px solid #aaa;
+  padding:10px;
 }
