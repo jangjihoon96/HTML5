@@ -16,7 +16,7 @@ html{
 body{
   margin: 0;
   font-size: 1.4rem;
-  background:url(./images/bg_flower.png) no-repeat 50% 0px, #ccc linear-gradient(to bottom, #ccc 0%, #eee 100%) no-repeat 0 0;
+  background:url(./images/bg_flower.png) no-repeat 50% 0px, #ccc linear-gradient(to bottom, #ccc 0%, #fff 100%) no-repeat 0 0;
 }
 
 a {
@@ -225,6 +225,7 @@ a {
   flex-flow: row nowrap;
   justify-content: space-between;
   padding:30px;
+  border-radius: 15px 15px 0 0;
   background-color: #fff;
 }
 .group1{
@@ -492,6 +493,7 @@ a {
   margin:10px 0 20px 0;
 }
 .news-content{
+  display: block;
   position: relative;
   padding-left: 130px;
 }
@@ -576,5 +578,78 @@ a {
   background-color: #fff;
   border-radius: 5px;
   border:1px solid #aaa;
+  margin-top:10px;
+  height: 25px;
+  overflow: hidden;
+  transition: height 200ms ease-in-out, padding 200ms 200ms ease-in-out;
+  /* height: 125px; */
+}
+.related-list:hover,
+.related-list:focus{
+  height: 145px;
+  padding:10px 0;
+}
+.related-list li{
+  padding:4px;
+}
+.related-list a{
+  display: block;
+  padding:0px 10px;
+}
+
+.rank{
   padding:10px;
+  border-radius: 5px;
+  margin-top:20px;
+}
+.rank-contents{
+  position: relative;
+}
+.rank-more{
+  position:absolute;
+  top:0; right:0;
+}
+
+.rank-list{
+  list-style: none;
+  margin-top:10px;
+}
+.rank-list li{
+  margin:6px 0;
+  counter-increment: Number;
+  position: relative;
+}
+.rank-list li::before{
+  content: counter(Number);
+  display:inline-block;
+  padding:2px 6px;
+  background-color: #999;
+  border-radius: 2px;
+  font-size:1.2rem;
+  color:#fff;
+}
+
+.rank-list a{
+  font-size:1.2rem;
+  display: inline-block;
+  padding:3px 0;
+}
+
+.rank-list .up,
+.rank-list .down,
+.rank-list .stop{
+  display: inline-block;
+  background: url(./images/rank.png) no-repeat;
+  width: 20px;
+  height:11px;
+  position:absolute;
+  top:50%;
+  right:0;
+  margin-top:-6px;
+}
+.rank-list .down{
+  background-position: 0 100%;
+}
+.rank-list .stop{
+  background-position: 0 50%;
 }

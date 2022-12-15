@@ -262,7 +262,7 @@
     </section>
     <section class="news">
       <h2 class="news-title title-size title-color">새소식</h2>
-      <div class="news-content">
+      <a href="/" class="news-content">
         <h3 class="news-content-title">W3C 사이트가 리뉴얼 되었습니다.</h3>
         <time class="news-content-time" datetime="2022-12-14:T22:13:02">2022. 12. 14</time>
         <p class="news-content-desc">디자인 및 다양한 view 환경을 고려하여 구성되어 있으며, 기존보다 최신 정보 및 개발자를 위한 기술 가이드도 찾기 쉽도록 구성되어 있습니다.</p>      
@@ -270,7 +270,7 @@
           <img src="./assets/news.gif" alt="W3C 리뉴얼된 모습의 썸네일" />
           <figcaption>W3C 리뉴얼</figcaption>
         </figure>
-      </div>
+      </a>
       <a href="/" class="icon-plus news-more">더보기</a>
     </section>
   </div>
@@ -291,7 +291,7 @@
       </section>
       <section class="related">
         <h2 class="related-title title-size">관련 <span class="title-color">사이트</span></h2>
-        <ul class="related-list">
+        <ul class="related-list" tabindex="0">
           <li>
             <a href="/">제로베이스</a>
           </li>
@@ -310,7 +310,34 @@
         </ul>
       </section>
     </div>
+    <div class="rank gradient-box">
+      <section class="rank-contents">
+        <h2 class="rank-title title-size">인기 <span class="title-color">사이트</span></h2>
+        <ol class="rank-list">
+          <li>
+            <a href="/">W3C</a>
+            <span class="up" aria-label="순위 상승"></span>
+          </li>
+          <li>
+            <a href="/">Web Standards</a>
+            <span class="down" aria-label="순위 하락"></span>
+          </li>
+          <li>
+            <a href="/">MDN</a>
+            <span class="stop" aria-label="순위 변동 없음"></span>
+          </li>
+          <li>
+            <a href="/">CSS ZenGarden</a>
+            <span class="up" aria-label="순위 상승"></span>
+          </li>
+        </ol>
+        <a href="/" class="icon-plus rank-more">더보기</a>
+      </section>
+    </div>
   </div>
 </main>
+<div class="slogan">
+  
+</div>
 </body>
 </html>
